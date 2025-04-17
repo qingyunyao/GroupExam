@@ -14,7 +14,7 @@ default filter: grey
 
 default output: FALSE
 
-pixelchange(new_bitmap,"grey",output="FALSE")
+pixelchange(new_bitmap,"grey",output="FALSE",)
 
 The output augument in pixelchange() is used to save the new image
 
