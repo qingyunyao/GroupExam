@@ -27,33 +27,35 @@ I am using a mac
 
 I finally succeed by doing the following
 
-## Set CRAN mirror (essential)
+### Set CRAN mirror (essential)
 
 options(repos = c(CRAN = "https://cloud.r-project.org"))
 
-## Install required development tools
+### Install required development tools
 
 install.packages(c("devtools", "remotes", "pkgbuild"))
 
-## For macOS (using Homebrew in Terminal):
+### For macOS (using Homebrew in Terminal):
 
 brew install imagemagick
+
 brew install pkg-config
 
-## Back in R
+### Back in R
 
 setwd("~/path/to/ImageFilter/package") # Set to your package directory
 
-## Install dependencies from DESCRIPTION
+### Install dependencies from DESCRIPTION
 
 remotes::install_deps(dependencies = TRUE, upgrade = "never")
 
-## Clean previous attempts
+### Clean previous attempts
 
 unlink("src/*.o", force = TRUE)
+
 unlink("src/*.so", force = TRUE)
 
-## Install with documentation build disabled
+### Install with documentation build disabled
 
 devtools::install(".", build_vignettes = FALSE, force = TRUE)
 
