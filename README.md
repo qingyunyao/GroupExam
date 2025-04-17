@@ -25,7 +25,7 @@ I encountered some problem installing the package locally after download the fil
 
 I am using a mac
 
-I finally succeed by doing the following
+I finally succeed by doing the following. Just in case you have the same problem.
 
 ### Set CRAN mirror (essential)
 
