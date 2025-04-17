@@ -8,9 +8,9 @@ library(magick)
 #' @param image_path the pathway of the image you want to manipulate
 #'
 #' @return image display on the R window
-#' @example import_image_bitmap <- readImage("")
-
-#test file path wd/figures/Testimage1.jpg, uset getwd() and setwd() to set correct working disc
+#' @examples
+#' # import_image_bitmap <- readImage("figures/Testimage1.jpg")
+#' @export
 readImage <- function (image_path = "figures/Testimage1.jpg"){
 
   if (!file.exists(image_path)){

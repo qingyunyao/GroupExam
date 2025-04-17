@@ -15,3 +15,6 @@ image display on the R window
 \description{
 Read the image of interest
 }
+\examples{
+# import_image_bitmap <- readImage("figures/Testimage1.jpg")
+}

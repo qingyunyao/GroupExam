@@ -1,7 +1,8 @@
 
 
 #' loop function to change the color pixel by pixel
-#' #' default setting grey filter
+#' @description
+#' default setting grey filter
 #' create a new object for the return e.g. new_obj <- pixelchange()
 #' use magick::fun to export the new_obj
 #'
@@ -10,8 +11,12 @@
 #'
 #' @return raw() vector of the new image with the filter chosen
 #'
-#' @example path.R
+#' @examples
 #'
+#' # import_image_bitmap <- readImage("figures/Testimage1.jpg")
+#' # pixelchange( ori_bitmap=import_image_bitmap, "grey", "FALSE")
+#'
+#' @export
 pixelchange <- function (ori_bitmap=image_bitmap, colorscale="grey", output="FALSE") {
   if (colorscale!="grey" && colorscale!="red" && colorscale!="green" && colorscale!="blue" ){
     return("Filter doesn't exist")
